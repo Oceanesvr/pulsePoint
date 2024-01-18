@@ -1,0 +1,1179 @@
+/*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: white;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+}
+
+.main{
+  padding: 0 8%;
+  border-radius: 0px;
+  width: 1359px;
+  height: 110.66px;
+  position: relative;
+  overflow: visible;
+}*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #ffffff; /* Ajoutez une couleur de fond pour éviter une zone blanche inattendue */
+}
+
+.container {
+  height: 100vh; /* 100% de la hauteur de la vue, ajustez si nécessaire */
+  overflow-y: auto; /* Barre de défilement si nécessaire */
+  position: relative; /* Assurez-vous que le positionnement relatif pour que le positionnement absolu fonctionne correctement */
+}
+
+
+header {
+  width: 1359px;
+  height: 110.66px;
+  background-color: #D9D9D9;
+  border-radius: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px; /* Ajustez la marge supérieure selon vos besoins */
+}
+
+
+#logo {
+  position: absolute;
+ height: auto;
+ width: 110px;
+ left: 60px;
+}
+
+/*Bandeau avec icone*/
+nav {
+  position: absolute;
+  right: 50px; /* Ajustez la position par rapport au bord droit selon vos besoins */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center; /* Pour aligner verticalement les éléments du menu */
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 40px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center; /* Pour aligner verticalement le texte avec les icônes */
+}
+
+nav a:hover {
+  color: #7752fe;
+}
+
+
+
+.iconeBandeau {
+  width: 24px; /* Ajustez la largeur selon vos besoins */
+  height: 24px; /* Ajustez la hauteur selon vos besoins */
+  border-radius: 5px; /* Bordure légèrement arrondie */
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out; /* Ajoute une transition pour une animation fluide */
+}
+
+.iconeBandeau:hover {
+  background-color: #7752fe; /* Fond violet au survol */
+  border: 2px solid #7752fe; /* Bordure violette au survol */
+}
+
+/*Bandeau sans icone*/
+
+.nav1 {
+  position: absolute;
+  right: 190px; /* Ajustez la position par rapport au bord droit selon vos besoins */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center; /* Pour aligner verticalement les éléments du menu */
+}
+
+.nav1 a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 40px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center; /* Pour aligner verticalement le texte avec les icônes */
+}
+
+.nav1 a:hover {
+  color: #7752fe;
+}
+
+#signup-btn {
+  width: 148.64px;
+  height: 38.78px;
+  border-radius: 16px;
+  background-color: #7752fe;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px; /* Ajustez la valeur selon vos besoins pour déplacer le bouton vers la droite */
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/*Accueil*/
+
+.pulse-point-votre-partenaire-dans-l-exploitation-des-donn-es {
+  text-align: left;
+  font-family: "Poppins-BoldItalic", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+  width: 794px;
+  left: 50px; 
+  top: 150px;
+}
+.pulse-point-votre-partenaire-dans-l-exploitation-des-donn-es-span {
+  background: radial-gradient(
+    closest-side,
+    rgba(141, 102, 243, 1) 0%,
+    rgba(141, 102, 243, 1) 0.009999999747378752%,
+    rgba(141, 102, 243, 1) 0.019999999494757503%,
+    rgba(186, 142, 219, 1) 43.75%,
+    rgba(255, 203, 184, 1) 100%
+  );
+  font-family: "Poppins-BoldItalic", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pulse-point-votre-partenaire-dans-l-exploitation-des-donn-es-span2 {
+  color: #000000;
+  font-family: "Poppins-BoldItalic", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  
+}
+.pulse-point-votre-partenaire-dans-l-exploitation-des-donn-es-span3 {
+  background: radial-gradient(
+    closest-side,
+    rgba(119, 82, 254, 1) 0%,
+    rgba(186, 142, 219, 1) 50.4166305065155%,
+    rgba(255, 203, 184, 1) 100%
+  );
+  font-family: "Poppins-BoldItalic", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.pulse-point-votre-partenaire-dans-l-exploitation-des-donn-es-span4 {
+  color: #000000;
+  font-family: "Poppins-BoldItalic", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.analyser-et-exploiter-pleinement-le-potentiel-de-vos-informations-notre-mission-est-de-vous-guider-travers-le-monde-complexe-des-donn-es-de-les-rendre-compr-hensibles-et-exploitables-avec-pulse-point-transformez-chaque-donn-e-en-une-opportunit-d-action-et-tracez-la-voie-vers-des-d-cisions-clair-es-et-innovantes {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 19.299999237060547px;
+  font-weight: 500;
+  position: relative;
+  width: 718px;
+  top: 200px;
+  left: 50px; 
+}
+
+#signup-link {
+  text-decoration: none; /* Supprime le soulignement du lien */
+  color: inherit; /* Hérite la couleur du texte de son parent (.nav1 a) */
+}
+
+#btn-demarer {
+  width: 209px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #7752fe;
+  color: #ffffff;
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+  left: 50px; 
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.ellipse-1 {
+  background: #7752fe;
+  border-radius: 50%;
+  opacity: 1;
+  width: 356px;
+  height: 230px;
+  position: relative;
+  filter: blur(148px);
+  left: 970px;
+  top: 5%;
+}
+
+
+._3-d-glassy-three-deformed-thin-lenses-of-different-colors-1 {
+  width: 368px;
+  height: 424px;
+  position: relative;
+  backdrop-filter: blur(2px);
+  object-fit: cover;
+  left:950px;
+  bottom: 50%;
+  object-fit: contain; /* Utilisez 'contain' pour conserver les dimensions de l'image */
+
+}
+
+/*footer*/
+
+.rectangle-50 {
+  background:white;
+  width: 1490px;
+  height: 136px;
+  position: relative;
+  top: 456%;
+}
+
+.group-17 {
+  position: absolute;
+  overflow: visible;
+  inset: 0;
+  bottom: 200px;
+  border-radius: 0px;
+  width: 1745px;
+  height: 136px;
+  color: rgb(24, 22, 22);
+}
+.openai-1 {
+  width: 217px;
+  height: 68px;
+  position: absolute;
+  left: 346px;
+  top: 669px;
+  object-fit: cover;
+}
+.google-sheets-1 {
+  width: 163px;
+  height: 136px;
+  position: absolute;
+  left: 1012px;
+  top: 610px;
+  object-fit: cover;
+}
+.logo-cx-f-1 {
+  border-radius: 5px;
+  width: 184px;
+  height: 80px;
+  position: absolute;
+  left: 617px;
+  top: 656px;
+  object-fit: cover;
+}
+.lgtbaimbridge-1 {
+  border-radius: 5px;
+  width: 143px;
+  height: 111.57px;
+  position: absolute;
+  left: 839px;
+  top: 630px;
+  object-fit: cover;
+}
+
+/*Page extration des donnes*/
+
+
+.dynamic-composition-of-colorful-lenses-cylinders-and-cubes {
+  width: 368px;
+  height: 424px;
+  position: relative;
+  object-fit: contain; /* Utilisez 'contain' pour conserver les dimensions de l'image */
+  left: 900px;
+  bottom: -200px;
+
+}
+
+
+.rectangle-38 {
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: #d9d9d9;
+  border-width: 3px;
+  width: 516px;
+  height: 310px;
+  position: relative;
+  left: 170px;
+  bottom: 170px;
+}
+
+.cliquez-ici-pour-d-poser-votre-fichier-excel {
+  color: #000000;
+  text-align: center;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 19.299999237060547px;
+  font-weight: 500;
+  position: relative;
+  top: 270px;
+  
+}
+
+.icons-8-xls-64-1 {
+  width: 89px;
+  height: 113px;
+  position: relative;
+  object-fit: contain; /* Utilisez 'contain' pour conserver les dimensions de l'image */
+  left: 200px;
+  top: 120px;
+}
+
+#btn-extraire{
+  width: 209px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #7752fe;
+  color: #ffffff;
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  /* right: 1000px;*/
+  left: 320px;
+    line-height: 50px; /* Centre le texte verticalement */
+    text-align: center; /* Centre le texte horizontalement */
+   
+}
+
+/*Page affichage synthèse*/
+.rectangle-51 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #ffcbb8;
+  border-width: 3px;
+  width: 1360px;
+  height: 500px;
+  position: relative;
+  top: 145px;
+  left: 65px;
+}
+
+.synth-se-des-donn-es {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 19.299999237060547px;
+  font-weight: 500;
+  position: relative;
+  top: 25px;
+  left: 10px;
+}
+
+#btn-sauvegarder{
+  width: 169px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #7752fe;
+  color: #ffffff;
+  position: absolute;
+  top: 93%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  right: 100px;
+    line-height: 50px; /* Centre le texte verticalement */
+    text-align: center; /* Centre le texte horizontalement */
+   
+}
+
+/*Page QR*/
+
+
+.s-lectionnez-les-questions-qui-vous-int-ressent-et-obtenez-une-synth-se-sur-mesure {
+  color: #000000;
+  text-align: center;
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  position: relative;
+  width: 1364px;
+  top: 190px;
+  left: 50px;
+}
+
+.rectangle-40 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #ffcbb8;
+  border-width: 3px;
+  width: 1260px;
+  height: 500px;
+  position: relative;
+  top: 160px;
+  left: 100px;
+}
+
+.donn-es-r-colt-es {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 19.299999237060547px;
+  font-weight: 500;
+  position: relative;
+  top: 25px;
+  left: 10px;
+}
+
+.body-overflow-visible {
+  overflow: visible !important; /* Utilisation de !important pour s'assurer que cela a la priorité */
+}
+
+.rectangle-43 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #ffcbb8;
+  border-width: 3px;
+  width: 1260px;
+  height: 810px;
+  position: relative;
+  left: 100px;
+ top:30%;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-left: 1000px;
+  top: 60px;
+  cursor: pointer;
+}
+
+.label {
+  font-size: 16px;
+}
+
+#btn-synthese{
+  width: 169px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #D9D9D9;
+  color: black;
+  position: absolute;
+  top: 215%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  left: 700px;
+    line-height: 50px; /* Centre le texte verticalement */
+    text-align: center; /* Centre le texte horizontalement */
+   
+}
+
+/*Page inscription*/
+
+.rectangle-violet {
+  background: #7752fe;
+  border-radius: 5px;
+  width: 1300px;
+  height: 400px;
+  position: relative;
+  top: 30%;
+  left: 90px;
+}
+
+.reprenez-l-o-vous-vous-tes-arr-t-en-vous-connectant-votre-compte-pulse-point {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 19.299999237060547px;
+  font-weight: 500;
+  position: relative;
+  width: 596px;
+  left:700px; 
+  top: 95px;
+}
+
+.vous-tes-d-j-inscrit {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 31px;
+  font-weight: 500;
+  position: relative;
+  width: 614px;
+  height: 57px;
+  left:700px; 
+  top: 70px;
+}
+
+#btn-seConnecter1{
+  width: 179px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: white;
+  position: absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-LightItalic", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+  left:700px; 
+  top: 160px;
+}
+
+.inscription-carre{
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 3px;
+  width: 563px;
+  height: 551px;
+  position: relative;
+  bottom: 250px;
+  left: 150px;
+}
+
+.inscrivez-vous {
+  background: radial-gradient(
+    closest-side,
+    rgba(119, 82, 254, 0.8) 0%,
+    rgba(186, 142, 216, 0.63) 50%,
+    rgba(255, 203, 184, 1) 100%
+  );
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  width: 519px;
+  height: 51px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  left: 30px;
+  top: 30px;
+}
+
+.form-group {
+  margin:30px;
+  width: 400px; /* Ajustez la largeur selon vos besoins */
+  top: 100px;
+}
+
+.label {
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 5px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  margin-top: 5px;
+  opacity: 0.59
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+}
+
+#btn-inscrire {
+  width: 209px;
+  height: 50px;
+  border-radius: 100px;
+  /*background-color: #D9D9D9;*/
+  color: black;
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+  /*opacity: 0.59;*/
+  left: 470px;
+  line-height: 50px; /* Centre le texte verticalement */
+  text-align: center; /* Centre le texte horizontalement */
+}
+
+
+/*Page connexion*/
+
+#btn-seConnecter2{
+    width: 209px;
+    height: 50px;
+    border-radius: 100px;
+    /*background-color: #D9D9D9;*/
+    color: black;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    /*opacity: 0.59;*/
+    left: 220px;
+    top: 370px;
+    line-height: 50px; /* Centre le texte verticalement */
+    text-align: center; /* Centre le texte horizontalement */}
+
+
+.d-couvrez-les-possibilit-s-infinies-de-pulse-point-en-cr-ant-un-compte-d-s-maintenant {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 19.299999237060547px;
+  font-weight: 500;
+  position: relative;
+  width: 577px;
+  left:20px;
+  top:150px;
+  top: 70px;
+}
+
+
+.vous-n-avez-pas-de-compte {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 31px;
+  font-weight: 500;
+  position: relative;
+  width: 614px;
+  height: 57px;
+  left:20px;
+  top: 50px;
+}
+
+.rectangle-violet2 {
+  background: #7752fe;
+  border-radius: 5px;
+  width: 1300px;
+  height: 400px;
+  position: relative;
+  top: 30%;
+  left: 90px;
+}
+
+.connexion-carre{
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 3px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 780px;
+  bottom: 230px;
+}
+
+.form-group2 {
+  margin:30px;
+  width: 400px; /* Ajustez la largeur selon vos besoins */
+  top: 110px;
+}
+
+#btn-compte{
+  width: 220px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: white;
+  position: absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-LightItalic", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  left:20px;
+  position: relative;
+  top: 140px;
+}
+
+.mot-de-passe-oublie {
+ /* text-decoration: none;  Désactive le soulignement par défaut */
+  transition: text-decoration 0.3s ease-in-out; /* Ajoute une transition pour une animation fluide */
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 15;
+  font-weight: 500;
+  position: relative;
+  left: 30px;
+  top: 80px;
+}
+
+
+/*page liste sauvegarde*/
+
+.synth-se {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 19.299999237060547px;
+  font-weight: 500;
+  position: relative;
+}
+
+/*Page suppression du compte*/
+.carre-supprimer {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #ffcbb8;
+  border-width: 2px;
+  width: 550px;
+  height: 501px;
+  position: relative;
+  left: 500px;
+  top: 150px;
+}
+
+.votre-compte-a-ete-supprimer-avec-succes {
+  color: #000000;
+  text-align: center;
+  font-family: "Poppins-SemiBoldItalic", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  position: relative;
+  width: 656px;
+  top:200px;
+  right: 50px;
+}
+
+.vos-donn-es-personnelles-ont-t-supprim-es-en-revanche-les-synth-se-sauvegard-es-sont-conserv-es-afin-d-effectuer-nos-statistiques {
+  color: #000000;
+  text-align: center;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  width: 623px;
+  right: 40px;
+  top:380px;
+
+}
+
+/*Page voir infos personnelles*/
+
+
+.carre-compte {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #ffcbb8;
+  border-width: 3px;
+  width: 550px;
+  height: 501px;
+  position: relative;
+  left: 450px;
+  top: 180px;
+}
+
+.compte {
+  background: radial-gradient(
+    closest-side,
+    rgba(119, 82, 254, 1) 0%,
+    rgba(186, 142, 216, 1) 66.77080988883972%,
+    rgba(255, 203, 184, 1) 100%
+  );
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  width: 210.35px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  height: 72.92px;
+  color: transparent;
+  top: 35px;
+  left: 50px;
+}
+
+.informations-personnelles {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  width: 258.11px;
+  height: 28.2px;
+  left: 50px;
+  top: 27px;
+}
+
+.supprimer-le-compte {
+  text-decoration: none; /* Désactive le soulignement par défaut */
+  transition: text-decoration 0.3s ease-in-out; /* Ajoute une transition pour une animation fluide */
+  color: #7752fe;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  width: 209.33px;
+  height: 28.2px;
+  left: 320px;
+  top: 260px;
+}
+
+
+.supprimer-le-compte:hover {
+  text-decoration: underline; /* Souligne le texte lorsqu'il est survolé */
+  color: #7752fe;
+}
+
+
+#btn-modifier{
+  width: 209px;
+    height: 50px;
+    border-radius: 100px;
+    /*background-color: #D9D9D9;*/
+    color: black;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    /*opacity: 0.59;*/
+    left: 50px;
+    top: 370px;
+    line-height: 50px; /* Centre le texte verticalement */
+    text-align: center; /* Centre le texte horizontalement */
+    overflow: visible;}
+
+    .icon2 {
+     display: block;
+      margin-bottom: 40px;
+      margin-left: 50px;
+    }
+
+    /*Page modification infos personnelle*/
+
+    .form-groupInfos {
+      margin-bottom: 18px;
+      position: relative;
+      width: 400px;
+      top: -250px; /* Ajustez la valeur selon vos besoins pour faire monter les groupes */
+      left: 90px;
+    }
+    
+    
+    .carre-compte2 {
+      border-radius: 5px;
+      border-style: solid;
+      border-color: #ffcbb8;
+      border-width: 3px;
+      width: 550px;
+      height: 501px;
+      position: relative;
+      left: 450px;
+      top: 180px;
+    }
+    
+    .compte2 {
+      background: radial-gradient(
+        closest-side,
+        rgba(119, 82, 254, 1) 0%,
+        rgba(186, 142, 216, 1) 66.77080988883972%,
+        rgba(255, 203, 184, 1) 100%
+      );
+      text-align: left;
+      font-family: "Poppins-Medium", sans-serif;
+      font-size: 40px;
+      font-weight: 500;
+      position: relative;
+      width: 210.35px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      height: 72.92px;
+      color: transparent;
+      top: 35px;
+      left: 50px;
+    }
+    #btn-enregistrer {
+      width: 209px;
+      height: 50px;
+      border-radius: 100px;
+      /* background-color: #D9D9D9; */
+      color: black;
+      position: absolute;
+      top: 370px; /* Ajustez la valeur selon vos besoins pour déplacer le bouton vers le bas */
+      left: 50px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      border: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: medium;
+      /* opacity: 0.59; */
+      line-height: 50px; /* Centre le texte verticalement */
+      text-align: center; /* Centre le texte horizontalement */
+      overflow: visible;
+    }
+    .iconCrayon {
+      position: absolute;
+      right: 10px;
+    }
+    .modification-de-vos-informations-personnelles {
+      color: #000000;
+      text-align: left;
+      font-family: "Poppins-Medium", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      position: relative;
+      left: 50px;
+      top: 22px;
+    }
+    
+    .icon3 {
+      display: block;
+      margin-bottom: 53px;
+      margin-left: 50px;
+    }
+    
+    .supprimer-le-compte2 {
+      text-decoration: none;
+      /* Désactive le soulignement par défaut */
+      transition: text-decoration 0.3s ease-in-out;
+      /* Ajoute une transition pour une animation fluide */
+      color: #7752fe;
+      text-align: left;
+      font-family: "Poppins-Medium", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      position: relative;
+      width: 209.33px;
+      height: 28.2px;
+      left: 320px;
+      top: 270px;
+    }
+    
+    .supprimer-le-compte2:hover {
+      text-decoration: underline;
+      /* Souligne le texte lorsqu'il est survolé */
+      color: #7752fe;
+    }
+    
+    .modifCompte {
+      background: #ffffff;
+      border-radius: 5px;
+      border-style: solid;
+      border-color: #d9d9d9;
+      border-width: 3px;
+      width: 563px;
+      height: 551px;
+      position: relative;
+      bottom: 250px;
+      left: 150px;
+    }
+    
+
+/*Page mot de passe*/
+
+.dynamic-composition-with-levitating-glass-balls{
+  width: 368px;
+  height: 424px;
+  position: relative;
+  object-fit: contain; /* Utilisez 'contain' pour conserver les dimensions de l'image */
+  left: 180px;
+  bottom: -200px;
+}
+
+.rectangle-47 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color:#ffcbb8;
+  border-width: 3px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 780px;
+  bottom: 250px;
+}
+
+.logo-marketing-agency-digital-3 {
+  width: 258px;
+  height: 155px;
+  position: relative;
+  object-fit:contain;
+  left: 110px;
+}
+
+.mot-de-passe-oubli {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-ExtraLight";
+  font-size: 31px;
+  font-weight: 200;
+  position: relative;
+  left: 120px;
+}
+
+.entrez-votre-adresse-e-mail-ci-dessous {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 19.299999237060547px;
+  font-weight: 500;
+  position: relative;
+  left: 80px;
+  top: 30px;
+}
+
+.input-containerReinitialiser {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 30px;
+  top: 20px;
+}
+.form-groupReinitialiser{
+  margin:20px;
+  width: 380px; /* Ajustez la largeur selon vos besoins */
+  top: 190px;
+}
+
+#btn-reinitialiser{
+  width: 209px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #7752fe;
+  color: black;
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  /* right: 1000px;*/
+  left: 140px;
+    line-height: 50px; /* Centre le texte verticalement */
+    text-align: center; /* Centre le texte horizontalement */
+   
+}
+
+.retour-la-page-de-connexion{
+
+    /* text-decoration: none;  Désactive le soulignement par défaut */
+     transition: text-decoration 0.3s ease-in-out; /* Ajoute une transition pour une animation fluide */
+     color: #000000;
+     text-align: left;
+     font-family: "Poppins-Medium", sans-serif;
+     font-size: 15;
+     font-weight: 500;
+     position: relative;
+     left: 145px;
+     top: 80px;
+   
+}
+
+
+.retour-la-page-de-connexion:hover {
+  text-decoration: underline; /* Souligne le texte lorsqu'il est survolé */
+  color: #000000;
+}
+
+/*Page liste sauvegarde*/
+
+.rectangle-52 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #ffcbb8;
+  border-width: 3px;
+  width: 1360px;
+  height: 500px;
+  position: relative;
+  top: 145px;
+  left: 65px;
+  /* Ajout de la bordure à gauche */
+  position: relative;
+}
+
+/* Ligne verticale à gauche du rectangle */
+.rectangle-52::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 400px; /* Ajustez la position selon vos besoins */
+  height: 100%;
+  width: 3px;
+  background-color: #ffcbb8;
+}
+
+.synth-se {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 19.299999237060547px;
+  font-weight: 500;
+  position: relative;
+  left: 420px;
+  top: 20px;
+}
